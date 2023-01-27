@@ -3,8 +3,8 @@ from time import sleep
 import os
 
 
-account = '0972860009'
-password = '213610ch'
+account = ''
+password = ''
 desired_caps = {'platformName': 'Android',
                 'platformVersion': '13',
                 'noReset': True,
