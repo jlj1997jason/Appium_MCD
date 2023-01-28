@@ -3,8 +3,8 @@ from time import sleep
 import os
 
 
-account = '0972860009'
-password = '213610ch'
+account = ''
+password = ''
 desired_caps = {'platformName': 'Android',
                 'platformVersion': '13',
                 'noReset': True,
@@ -14,37 +14,45 @@ desired_caps = {'platformName': 'Android',
                 'appActivity': 'qqn.SJz',
                 }
 
+def startEvn():
+    #conda env start
+    print("Starting conda virtual environment..")
+    os.system("conda activate RobotFramework_Appium")
+    #env python
+    os.system("C:/Users/j/anaconda3/envs/RobotFramework_Appium/python.exe c:/Users/j/Desktop/Vscode/Appium/Server/emulator_pixel_4.py")
+
 def startEmulator():
     if os.system("adb devices")==0:
         print("starting emulator...")
         os.system("start cmd /k emulator -avd Pixel_4_API_33")
+        print("please wait 60 seconds...")
+        sleep(5)
+        print("please wait 55 seconds...")
+        sleep(5)
+        print("please wait 50 seconds...")
+        sleep(5)
+        print("please wait 45 seconds...")
+        sleep(5)
+        print("please wait 40 seconds...")
+        sleep(5)
+        print("please wait 35 seconds...")
+        sleep(5)
+        print("please wait 30 seconds...")
+        sleep(5)
+        print("please wait 25 seconds...")
+        sleep(5)
+        print("please wait 20 seconds...")
+        sleep(5)
+        print("please wait 15 seconds...")
+        sleep(5)
+        print("please wait 10 seconds...")
+        sleep(5)
+        print("please wait 5 seconds...")
+        sleep(5)
+        print("finish!")
 
 startEmulator()
-print("please wait 60 seconds...")
-sleep(5)
-print("please wait 55 seconds...")
-sleep(5)
-print("please wait 50 seconds...")
-sleep(5)
-print("please wait 45 seconds...")
-sleep(5)
-print("please wait 40 seconds...")
-sleep(5)
-print("please wait 35 seconds...")
-sleep(5)
-print("please wait 30 seconds...")
-sleep(5)
-print("please wait 25 seconds...")
-sleep(5)
-print("please wait 20 seconds...")
-sleep(5)
-print("please wait 15 seconds...")
-sleep(5)
-print("please wait 10 seconds...")
-sleep(5)
-print("please wait 5 seconds...")
-sleep(5)
-print("finish!")
+
 
 
 print("starting Appium Server")
