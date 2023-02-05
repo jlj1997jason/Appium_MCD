@@ -13,8 +13,6 @@ outcome                ==      1.2.0
 pip                    ==      22.3.1   
 pycparser              ==      2.21     
 PySocks                ==      1.7.1    
-robotframework         ==      6.0.2    
-robotframework-appiumlibrary == 2.0.0
 selenium               ==      4.7.2
 setuptools             ==      65.6.3
 six                    ==      1.16.0
