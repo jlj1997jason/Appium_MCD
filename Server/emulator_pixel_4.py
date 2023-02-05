@@ -41,7 +41,7 @@ startEmulator()
 
 print("starting Appium Server")
 os.system("start cmd /k appium -a 127.0.0.1 -p 4723")
-sleep(7)
+sleep(10)
 
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
